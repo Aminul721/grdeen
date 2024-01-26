@@ -1,0 +1,239 @@
+.free-booking-one {
+    overflow: hidden;
+    position: relative;
+    .container-fluid {
+        padding-right: 0;
+    }
+    &__left {
+        width: 52%;
+        position: relative;
+        z-index: 2;
+        @media (max-width:991px) {
+            width: 100%;
+        }
+    }
+    &__content {
+        max-width: 654px;
+        margin-left: auto;
+        padding: 112px 64px 119px 35px;
+        @media (max-width:991px) {
+            padding: 80px 0;
+            padding-right: 15px;
+            margin: 0;
+            max-width: 100%;
+        }
+    }
+    .sec-title {
+        padding-bottom: 37px;
+        &__img,
+        &__tagline,
+        &__title {
+            color: $grdeen-white;
+        }
+    }
+    .dropdown-toggle {
+        &::after {
+            border: 0;
+            font-family: 'icomoon' !important;
+            content: '\e924';
+            margin: 0;
+            margin-right: -8px;
+            font-size: 16px;
+        }
+    }
+    .bootstrap-select .dropdown-menu {
+        top: -4px !important;
+    }
+    &__submit {
+        background-color: $grdeen-text-dark;
+        border-radius: 4px;
+        padding: 18px 32px;
+        &::before {
+            background-color: $grdeen-white;
+        }
+        &:hover {
+            color: $grdeen-text-dark;
+        }
+    }
+
+    &__right {
+        width: 48%;
+        @media (max-width:991px) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        height: 100%;
+        padding-left: 7px;
+        position: relative;
+        &__maskingimg {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            -webkit-mask-image: url('../images/shapes/booking-mask1-1.svg');
+            mask-image: url('../images/shapes/booking-mask1-1.svg');
+            -webkit-mask-position: right center;
+            mask-position: right center;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-size: 68% 100%;
+            mask-size: 68% 100%;
+
+            @media (min-width:2850px) {
+                -webkit-mask-size: 47% 100%;
+                mask-size: 47% 100%;
+            }
+            @media (max-width:991px) {
+                -webkit-mask-size: 47% 100%;
+                mask-size: 47% 100%;
+            }
+            img {
+                width: auto !important;
+                border-radius: 40% 0 0 40% !important;
+                @media (max-width:991px) {
+                    width: 100% !important;
+                    border-radius: 0 !important;
+                }
+            }
+        }
+        &__shape {
+            position: absolute;
+            width: 100%;
+            max-width: 680px;
+            height: 100%;
+            top: 0;
+            left: 20px;
+            display: flex;
+            justify-content: flex-start;
+            img {
+                width: 100%!important;
+            }
+        }
+    }
+
+    &__shadow {
+        position: absolute;
+        left: 25px;
+        bottom: -92px;
+        z-index: 1;
+        &__title {
+            color: rgba($grdeen-white-rgb,0.1);
+            font-weight: 600;
+            font-size: 200px;
+            line-height: 1;
+        }
+    }
+
+    &--three {
+        background-color: #09290b;
+        position: relative;
+        .free-booking-one__shape3,
+        .free-booking-one__shape1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 42px;
+            max-width: 216px;
+            max-height: 303px;
+            opacity: 0.3;
+            animation: bookingEffect1 1.5s linear 0s infinite alternate-reverse;
+            @keyframes bookingEffect1 {
+                0% {
+                    transform: translateY(-10px) skewY(-8deg);
+                }
+                100% {
+                    transform: translateY(10px) skewY(8deg);
+                }
+            }
+        }
+        .free-booking-one__shape3 {
+            left: 30px;
+            bottom: 65px;
+            top: initial;
+            animation: initial;
+            font-size: 117px;
+            line-height: 1;
+            width: auto;
+            height: auto;
+            max-width: initial;
+            max-height: initial;
+        }
+
+        .free-booking-one__left {
+            width: 52%;
+            position: relative;
+            z-index: 2;
+            @media (max-width:991px) {
+                width: 100%;
+            }
+        }
+        .free-booking-one__right {
+            width: 48%;
+            @media (max-width:991px) {
+                width: 100%;
+            }
+        }
+
+        .free-booking-one__image {
+            width: calc(calc(100% + 251px));
+            margin-left: -251px;
+            &__maskingimg {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                -webkit-mask-image: url('../images/shapes/booking-shape3-1.svg');
+                mask-image: url('../images/shapes/booking-shape3-1.svg');
+                -webkit-mask-position: right center;
+                mask-position: right center;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-size: 100% 100%;
+                mask-size: 100% 100%;
+                position: relative;
+                z-index: 2;
+                img {
+                    width: 100%;
+                    border-radius: 0 !important;
+                }
+            }
+
+            &__shape {
+                top: -30px;
+                left: initial;
+                right: 0;
+                max-width: 100%;
+                width: 100%;
+                z-index: 3;
+                img {
+                    width: calc(calc(100% + 40px)) !important;
+                    height: calc(100% + 32px);
+                }
+            }
+            &__shape3,
+            &__shape2 {
+                position: absolute;
+                top: 16%;
+                left: 24%;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                max-width: 325px;
+                max-height: 254px;
+                z-index: 1;
+            }
+        }
+        .free-booking-one__submit {
+            background-color: $grdeen-base;
+        }
+
+        .free-booking-one__shadow {
+            &__title {
+                color: rgba($grdeen-white-rgb,0.04);
+            }
+        }
+    }
+}

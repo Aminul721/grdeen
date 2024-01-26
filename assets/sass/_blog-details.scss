@@ -1,0 +1,143 @@
+.blog-details {
+	.blog-card__image img {
+		transform: scale(1);
+		transform: translatex(0%) scalex(1);
+		opacity: 1;
+		filter: blur(0px);
+	}
+
+	.blog-card:hover {
+
+		.blog-card__image img {
+			transform: scale(1);
+			transform: translatex(0%) scalex(1);
+			opacity: 1;
+			filter: blur(0px);
+		}
+	}
+
+	.blog-card-two__text {
+		margin: 0;
+
+		+.blog-card-two__text {
+			margin-top: 31px;
+		}
+	}
+
+
+	.blog-card__title {
+		margin-bottom: 10px;
+	}
+
+	.blog-card-two__content {
+		padding-bottom: 50px;
+		border-bottom: 1px solid $grdeen-border-color;
+	}
+
+	&__meta {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	&__tags {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		&__title {
+			text-transform: uppercase;
+			margin: 0;
+			line-height: 1em;
+			font-size: 20px;
+			font-weight: bold;
+			margin-top: -4px;
+			margin-bottom: -4px;
+
+			@include devices(md) {
+				font-size: 22px;
+			}
+
+			@include devices(lg) {
+				font-size: 24px;
+			}
+		}
+
+		.sidebar__tags a {
+			background-color: $grdeen-gray;
+
+			&:hover {
+				background-color: $grdeen-base;
+			}
+		}
+	}
+
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+
+		a {
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $grdeen-gray;
+			font-size: 14px;
+			color: $grdeen-black;
+			transition: all 500ms ease;
+			border-radius: 50%;
+
+			&:hover {
+				background-color: $grdeen-base;
+				color: $grdeen-white;
+			}
+		}
+	}
+
+	&__paginations {
+		display: grid;
+		grid-gap: 30px;
+		grid-template-columns: repeat(1, 1fr);
+
+		@include devices(md) {
+			grid-template-columns: repeat(2, 1fr);
+
+		}
+
+		.sidebar__posts__item:not(:last-of-type) {
+			border-bottom: 0px solid var(--grdeen-border-color, #e8e3da);
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+		}
+
+		.sidebar__posts__item {
+			background-color: $grdeen-gray;
+			padding: 20px !important;
+
+			@include devices(xl) {
+				padding: 30px;
+			}
+		}
+
+		.sidebar__posts__item:nth-of-type(2) {
+			flex-direction: row-reverse;
+			text-align: right;
+
+			.sidebar__posts__image {
+				margin-right: 0;
+				margin-left: 20px;
+			}
+
+			.sidebar__posts__meta {
+				flex-direction: row-reverse;
+			}
+		}
+
+	}
+}

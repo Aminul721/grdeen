@@ -1,0 +1,488 @@
+.funfact-one {
+	padding: 120px 0;
+	padding-bottom: 112px;
+	background-color: $grdeen-white;
+	@media (max-width:991px) {
+		padding: 80px 0;
+	}
+	.container {
+		@media (max-width:1200px) {
+			max-width: 100%;
+		}
+	}
+	&__content {
+		margin-top: -5px;
+		padding-right: 34px;
+		@media (max-width:991px) {
+			padding-right: 0;
+		}
+		.sec-title {
+			padding-bottom: 22px;
+			&__title {
+				margin-top: 6px;
+			}
+		}
+		&__text {
+			font-weight: 400;
+			font-size: $body-size;
+			line-height: 30px;
+			margin-bottom: 37px;
+		}
+		&__bookwrap {
+			background-color: $grdeen-white2;
+			@media (max-width:767px) {
+				flex-direction: column;
+				gap: 10px 0;
+				padding: 15px;
+			}
+			&__btn {
+				background-color: $grdeen-text-dark;
+				padding: 16.5px 18px;
+				&::before {
+					background-color: $grdeen-base;
+				}
+			}
+			&__text {
+				font-weight: 500;
+				color: $grdeen-text-dark;
+				font-size: $body-size;
+				line-height: 30px;
+				margin-bottom: 0;
+				padding-left: 24px;
+				@media (max-width:767px) {
+					text-align: center;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	&__list {
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0 30px;
+		@media (max-width:767px) {
+			gap: 30px 0;
+		}
+	}
+	&__item {
+		width: calc(calc(100% - 30px) / 2);
+		.work-process-one__col {
+			padding: 36px 23px 32px 23px;
+			&:hover {
+				.work-process-one__col__icon {
+					background-color: $grdeen-text-dark;
+					box-shadow: 0px 0px 0px 9px rgba($grdeen-base-rgb,0.8);
+				}
+			}
+		}
+		.work-process-one__col__circlewrap::before { display: none; }
+		.work-process-one__col__icon {
+			font-size: initial;
+			background-color: $grdeen-base;
+		}
+
+		@media (max-width:767px) {
+			width: calc(calc(100% - 0px) / 1);
+		}
+	}
+	&__countwrap {
+		display: flex;
+	}
+	&__count {
+		color: $grdeen-white;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1;
+	}
+
+	&--two {
+		padding-top: 0;
+		padding-bottom: 120px;
+		background-color: #136d17;
+		position: relative;
+		@media (max-width:991px) {
+			padding-bottom: 80px;
+		}
+		.funfact-one__bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		.funfact-one__wrapper {
+			max-width: 1570px;
+			margin: 0 auto;
+			background-color: $grdeen-white2;
+			padding-top: 120px;
+			padding-bottom: 120px;
+			position: relative;
+			z-index: 2;
+			overflow: hidden;
+			@media (max-width:991px) {
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+
+			&__shapeleft,
+			&__shaperight {
+				position: absolute;
+				width: 100%;
+				z-index: 2;
+				bottom: -5px;
+				display: flex;
+			}
+
+			&__shapeleft {
+				left: -4px;
+				justify-content: flex-start;
+			}
+			&__shaperight {
+				right: -4px;
+				justify-content: flex-end;
+			}
+		}
+		.container {
+			position: relative;
+			z-index: 3;
+			@media (max-width:1200px) {
+				
+			}
+		}
+		.funfact-one__content__bookwrap,
+		.work-process-one__col {
+			background-color: $grdeen-white;
+		}
+		.work-process-one__col__shapebg {
+			background-color: rgba($grdeen-base-rgb,0.07);
+			left: 1px;
+			bottom: -1px;
+		}
+		.work-process-one__col__circlewrap {
+			position: relative;
+		}
+		.work-process-one__col__shapetree {
+			position: absolute;
+			width: 65px;
+			height: auto;
+			top: -32px;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+			z-index: 1;
+			animation: funfactEffect2 1.5s linear infinite alternate;
+			@keyframes funfactEffect2 {
+                0% {
+                    transform: translateX(-9px);
+                }
+                100% {
+                    transform: translateX(9px);
+                }
+            }
+		}
+	}
+
+	&--three {
+		padding-top: 396px;
+		.funfact-one__bg {
+            background-position: left bottom;
+			background-repeat: no-repeat;
+        }
+	}
+}
+
+.funfact-two {
+	position: relative;
+	background-color: $grdeen-base;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 120px 0;
+
+	&__shape {
+		position: absolute;
+		left: -10px;
+		top: 0;
+
+		img {
+			animation: shapeMove 3s linear 0s infinite;
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding: 80px 0;
+	}
+
+	.sec-title {
+		padding-bottom: 33px;
+	}
+
+	.sec-title__tagline,
+	.sec-title__title {
+		color: $grdeen-white;
+	}
+
+	&__list {
+		position: relative;
+		background-color: $grdeen-white;
+		margin: 0 0 0 -7px;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 0;
+
+		@media (max-width: 991px) {
+			margin: 50px 0 0;
+		}
+
+		&__icon {
+			width: 94px;
+			height: 94px;
+			background-color: $grdeen-base;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+
+			img {
+				height: 65px;
+				transform: scale(1);
+				transition: 500ms ease;
+			}
+
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+
+		&:hover .funfact-two__list__icon img {
+			transform: scale(0.9);
+		}
+	}
+
+	&__item {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding: 42px 58px;
+
+		&:nth-child(1),
+		&:nth-child(3) {
+			border-right: 1px solid $grdeen-base;
+		}
+
+		&:nth-child(1),
+		&:nth-child(2) {
+			border-bottom: 1px solid $grdeen-base;
+		}
+
+		@media (max-width: 1199px) {
+			padding-left: 30px;
+			padding-right: 25px;
+		}
+
+		@media (max-width: 991px) {
+			padding-left: 50px;
+		}
+
+		@media (max-width: 767px) {
+			padding-left: 50px;
+			flex: 0 0 100%;
+			max-width: 100%;
+			border-bottom: 1px solid $grdeen-base;
+		}
+	}
+
+	&__count {
+		margin: 0;
+		color: $grdeen-black;
+		font-size: 40px;
+		font-family: $grdeen-font;
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 0px;
+
+		@include devices(md) {
+			font-size: 50px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 18px;
+		margin: 0;
+	}
+}
+
+.funfact-three {
+	position: relative;
+	padding: 100px 0;
+
+	@media (max-width: 767px) {
+		padding: 80px 0 50px;
+	}
+
+	&__bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: $grdeen-gray;
+
+		@media (min-width: 1400px) {
+			width: calc(100% - 240px);
+			left: 120px;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 0;
+
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	&__item {
+		flex: 0 0 25%;
+		max-width: 25%;
+		position: relative;
+
+		@media (max-width: 991px) {
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding: 0 0 30px !important;
+		}
+
+		@media (max-width: 767px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding: 0 0 30px !important;
+			text-align: center;
+		}
+
+		&:not(:last-of-type)::before {
+			content: "";
+			width: 1px;
+			height: 100%;
+			background-color: $grdeen-border-color;
+			position: absolute;
+			top: 0;
+			right: 54px;
+
+			@media (max-width: 991px) {
+				right: 50px !important;
+			}
+
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+
+		&:not(:first-of-type) {
+			padding-left: 37px;
+
+			@media (max-width: 1199px) {
+				padding-left: 0;
+			}
+		}
+
+		&:nth-child(2)::before {
+			right: 16px;
+
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+
+		&:nth-child(3)::before {
+			right: -20px;
+		}
+
+		&:nth-child(3) {
+			padding-left: 63px;
+
+			@media (max-width: 1199px) {
+				padding-left: 40px;
+			}
+		}
+
+		&:last-child {
+			padding-left: 104px;
+
+			@media (max-width: 1199px) {
+				padding-left: 70px;
+			}
+		}
+
+		&:hover .funfact-three__icon::before {
+			transform: scale(0.9);
+		}
+	}
+
+	&__icon {
+		width: 103px;
+		height: 104px;
+		background-color: $grdeen-base;
+		font-size: 60px;
+		color: $grdeen-white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0 13px;
+
+		@media (max-width: 767px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&::before {
+			transition: all 500ms linear;
+			transition-delay: 0s;
+			transition-delay: 0s;
+			transition-delay: 0s;
+			transition-delay: 0s;
+			transition-delay: 0.1s;
+			transform: scale(1);
+		}
+	}
+
+	&__count {
+		margin: 0;
+		color: $grdeen-black;
+		font-family: $grdeen-font;
+		font-size: 35px;
+		font-weight: 500;
+		line-height: 1;
+
+		@include devices(md) {
+			font-size: 40px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		color: $grdeen-text;
+		font-size: 16px;
+		margin-top: 9px;
+		margin-bottom: -6px;
+	}
+}

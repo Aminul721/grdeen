@@ -1,0 +1,16 @@
+@mixin grdeenBtn($bgColor: $grdeen-base, $color: #fff, $padding: 16.25px 48px) {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: none;
+  outline: none !important;
+  background-color: $bgColor;
+  color: $color;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: $grdeen-font;
+  padding: $padding;
+  transition: 500ms;
+  text-transform: uppercase;
+  @include reverseHover($bgColor: $bgColor, $color: $color);
+}

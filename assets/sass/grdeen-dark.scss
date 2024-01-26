@@ -1,0 +1,173 @@
+:root {
+    --grdeen-text: #6e6b70;
+    --grdeen-text-rgb: 110, 107, 112;
+    --grdeen-white: #141215;
+    --grdeen-white-rgb: 20, 18, 21;
+    --grdeen-base: #c2a74e;
+    --grdeen-base-rgb: 194, 167, 78;
+    --grdeen-black: #fff;
+    --grdeen-black-rgb: 255, 255, 255;
+    --grdeen-black3: #000;
+    --grdeen-black3-rgb: 0, 0, 0;
+    --grdeen-black4: #121013;
+    --grdeen-black4-rgb: 18, 16, 19;
+    --grdeen-gray: #1c1a1d;
+    --grdeen-gray-rgb: 28, 26, 29;
+    --grdeen-border-color: #2f2d30;
+    --grdeen-border-color-rgb: 47, 45, 48;
+}
+
+.main-slider-one__bg::after {
+    background-image: url(../images/shapes/hero-slider-1-1-dark.png);
+}
+
+.contact-map,
+.opening,
+.blog-one,
+.instagram-one,
+.why-choose-one,
+.testimonials-one,
+.about-one {
+    background-color: var(--grdeen-white);
+}
+
+.footer-widget__newsletter button[type=submit]:hover,
+.footer-widget__social a:hover,
+.footer-widget__social a,
+.footer-widget__info li a:hover,
+.footer-widget__links li a:hover,
+.footer-widget__title,
+.cta-two__sub-title,
+.cta-two__title,
+.opening__info,
+.opening__title,
+.opening__icon,
+.blog-card__date,
+.contact__input-box i,
+.contact__input-box .bootstrap-select>.dropdown-toggle::before,
+.contact .sec-title__title,
+.funfact-one__count,
+.funfact-one__text,
+.funfact-one__icon,
+.instagram-one a::before,
+.why-choose-one__list__icon,
+.service-one__item:hover .service-one__item__title,
+.video-two__btn .video-popup,
+.video-two__btn .curved-circle--item span,
+.video-two__title,
+.client-carousel-one .owl-theme .owl-nav button:hover,
+.about-one__image__info__icon,
+.feature-one__item__icon,
+.main-slider-one__title,
+.main-slider-one__sub-title {
+    color: var(--grdeen-black);
+}
+
+.main-slider-one__bg::before {
+    background-color: var(--grdeen-gray);
+    opacity: .5;
+}
+
+.about-one__image__info,
+.background-black,
+.cta-two__content .grdeen-btn::before,
+.blog-card__content,
+.about-one__content__list li {
+    background-color: var(--grdeen-gray);
+}
+
+.main-slider-one__carousel.owl-carousel .owl-nav button {
+    background-color: rgba(var(--grdeen-black-rgb), .1);
+    color: var(--grdeen-black);
+}
+
+.main-slider-one circle {
+    stroke: var(--grdeen-white);
+}
+
+.main-slider-one__carousel .owl-dots .owl-dot span {
+    border-color: var(--grdeen-black);
+}
+
+.cta-two__content .grdeen-btn,
+.cta-two__content .grdeen-btn::after,
+.blog-card__image__link::before,
+.blog-card__image__link::after,
+.funfact-one__item:not(:first-of-type)::before,
+.main-slider-one__carousel .owl-dots .owl-dot:hover span,
+.main-slider-one__carousel .owl-dots .owl-dot.active span {
+    background-color: var(--grdeen-black);
+}
+
+.about-one__flower {
+    background-color: var(--grdeen-black4);
+}
+
+.about-one__image__info::after {
+    border-image: linear-gradient(-45deg, rgba(var(--grdeen-base-rgb), 1) 0%, rgba(var(--grdeen-black3-rgb), 1) 100%) 1;
+}
+
+.client-carousel-one .client-carousel__one__item:hover {
+    background-color: var(--grdeen-gray);
+}
+
+.contact,
+.contact__bg,
+.video-two__bg,
+.video-two {
+    background-color: var(--grdeen-black3);
+}
+
+.instagram-one a::after {
+    background-color: rgba(var(--grdeen-black3-rgb), .5);
+}
+
+.contact__input-box textarea,
+.contact__input-box input[type="date"],
+.contact__input-box input[type="text"],
+.contact__input-box input[type="email"] {
+    color: var(--grdeen-black);
+    border-color: rgba(var(--grdeen-black-rgb, 255, 255, 255), 0.15);
+}
+
+.contact__input-box .bootstrap-select>.dropdown-toggle {
+    color: var(--grdeen-black) !important;
+}
+
+.contact__input-box .bootstrap-select>.dropdown-toggle {
+    border-color: rgba(var(--grdeen-black-rgb, 255, 255, 255), 0.15);
+}
+
+.contact__input-box .bootstrap-select .dropdown-menu>li:hover>a,
+.contact__input-box .bootstrap-select .dropdown-menu>li.selected>a {
+    color: var(--grdeen-black);
+}
+
+.blog-card__image__link {
+    background-color: rgba(var(--grdeen-gray-rgb), .5);
+}
+
+.opening__info--last {
+    border-color: rgba(var(--grdeen-black-rgb), .2);
+}
+
+.main-footer__bottom__inner {
+    border-color: rgba(var(--grdeen-black-rgb), .2);
+}
+
+.google-map iframe {
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+.cta-two__thumb__two__thumb,
+.cta-two__thumb__one__thumb {
+    border-color: var(--grdeen-black);
+}
+
+.cta-two__content .grdeen-btn:hover {
+    color: var(--grdeen-white);
+}
+
+.footer-widget__newsletter input[type="text"]:focus {
+    color: var(--grdeen-text);
+}

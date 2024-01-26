@@ -1,0 +1,115 @@
+.error-404 {
+	padding-bottom: 80px;
+	text-align: center;
+	padding-top: 20px;
+
+	@include devices(md) {
+		padding-top: 14px;
+	}
+
+	@include devices(lg) {
+		padding-bottom: 120px;
+	}
+
+	&__title {
+		font-size: 100px;
+		line-height: 1;
+		font-weight: bold;
+		margin-bottom: 20px;
+		position: relative;
+		display: inline-block;
+
+		@include devices(md) {
+			font-size: 200px;
+		}
+
+		@include devices(lg) {
+			font-size: 400px;
+			margin-top: -85px;
+			margin-bottom: 50px;
+		}
+
+		span {
+
+			@include devices(lg) {
+				color: $grdeen-white;
+			}
+		}
+
+		img {
+			display: none;
+			position: absolute;
+			top: 51%;
+			left: 33%;
+			animation: flowerRotate 5s linear 0s infinite;
+
+			@include devices(lg) {
+				display: block;
+			}
+		}
+	}
+
+	&__sub-title {
+		font-size: 28px;
+		text-transform: uppercase;
+		color: $grdeen-black;
+		margin: 0;
+		line-height: 1.2em;
+		margin-bottom: 15px;
+		font-weight: bold;
+
+		@include devices(md) {
+			font-size: 35px;
+		}
+
+		@include devices(xl) {
+			font-size: 40px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 1.2em;
+		margin: 0;
+		margin-bottom: 40px;
+
+		@include devices(md) {
+			font-size: 18px;
+		}
+	}
+
+	&__search {
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		margin-bottom: 20px;
+		width: 100%;
+		max-width: 550px;
+
+		input[type=text] {
+			border: none;
+			outline: none;
+			display: block;
+			background-color: $grdeen-gray;
+			color: $grdeen-text;
+			font-size: 14px;
+			width: 100%;
+			max-width: 550px;
+			padding-left: 30px;
+			height: 58px;
+		}
+
+		&__btn {
+			@include reset-btn;
+			position: absolute;
+			top: 50%;
+			right: 30px;
+			transform: translateY(-50%);
+			font-size: 20px;
+
+			@include devices(md) {
+				font-size: 22px;
+			}
+		}
+	}
+}

@@ -1,0 +1,140 @@
+.comments-one {
+	margin-top: 40px;
+
+	@include devices(xl) {
+		margin-top: 55px;
+	}
+
+	&__title {
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 25px;
+		color: $grdeen-black;
+		font-weight: bold;
+		margin-top: -4px;
+		margin-bottom: -4px;
+
+		@include devices(lg) {
+			font-size: 30px;
+		}
+	}
+
+
+	&__list {
+		margin: 0;
+		margin-top: 35px;
+	}
+
+	&__card {
+		@include devices(md) {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		&:not(:first-of-type) {
+			margin-top: 40px;
+			padding-top: 40px;
+			border-top: 1px solid $grdeen-border-color;
+
+			@include devices(xl) {
+				margin-top: 50px;
+				padding-top: 50px;
+			}
+		}
+
+		&__image {
+			@include devices(md) {
+				margin-right: 30px;
+			}
+
+			@include devices(xl) {
+				margin-right: 45px;
+			}
+
+			img {
+				border-radius: 50%;
+			}
+		}
+
+		&__title {
+			margin: 0;
+			font-size: 20px;
+			text-transform: uppercase;
+			color: $grdeen-black;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 10px;
+
+			@include devices(xl) {
+				margin-bottom: 21px;
+			}
+		}
+
+		&__text {
+			margin: 0;
+			font-size: 15px;
+			line-height: 2em;
+			margin-bottom: 20px;
+			max-width: 560px;
+
+			@include devices(md) {
+				margin-bottom: 0;
+			}
+		}
+
+		&__reply {
+			padding: 8.5px 18px;
+			font-size: 10px;
+			font-weight: 600;
+
+			@include devices(md) {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			&:hover {
+				color: $grdeen-white;
+			}
+
+			&::after {
+				background-color: $grdeen-base;
+			}
+
+			&::before {
+				background-color: $grdeen-black;
+			}
+		}
+
+		&__content {
+			position: relative;
+		}
+	}
+
+}
+
+.comments-form {
+	margin-top: 40px;
+
+	@include devices(xl) {
+		margin-top: 55px;
+	}
+
+	&__title {
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 25px;
+		color: $grdeen-black;
+		font-weight: bold;
+		margin-top: -4px;
+		margin-bottom: -4px;
+
+		@include devices(lg) {
+			font-size: 30px;
+		}
+	}
+
+	&__form {
+		margin-top: 45px;
+	}
+}

@@ -1,0 +1,86 @@
+:root {
+	--grdeen-font: 'Inter', sans-serif;
+	--grdeen-heading-font: 'DM Sans', sans-serif;
+	--grdeen-special-font: 'Alex Brush', cursive;
+
+	--grdeen-text: #626f62;
+	--grdeen-text-rgb: #{toRGB(#626f62)};
+	--grdeen-text-dark: #07370a;
+	--grdeen-text-dark-rgb: #{toRGB(#07370a)};
+	--grdeen-text-dark2: #0e150e;
+	--grdeen-text-dark2-rgb: #{toRGB(#0e150e)};
+
+	// not use
+	--grdeen-text-gray: #89868d;
+	--grdeen-text-gray-rgb: #{toRGB(#89868d)};
+
+	--grdeen-base: #1a9120;
+	--grdeen-base-rgb: #{toRGB(#1a9120)};
+	--grdeen-green: #1f9a26;
+	--grdeen-green-rgb: #1f9a26;
+	--grdeen-gray: #f6f7f2;
+	--grdeen-gray-rgb: #{toRGB(#f6f7f2)};
+	--grdeen-gray2: #f1f4f1;
+	--grdeen-gray2-rgb: #{toRGB(#f1f4f1)};
+	--grdeen-white: #fff;
+	--grdeen-white-rgb: #{toRGB(#fff)};
+	--grdeen-white2: #f2f4ec;
+	--grdeen-white2-rgb: #{toRGB(#f2f4ec)};
+	--grdeen-white3: #faf8ec;
+	--grdeen-white3-rgb: #{toRGB(#faf8ec)};
+	--grdeen-white4: #ecf2df;
+	--grdeen-white4-rgb: #{toRGB(#ecf2df)};
+	--grdeen-black: #172000;
+	--grdeen-black-rgb: #{toRGB(#172000)};
+	--grdeen-black2: #4f5345;
+	--grdeen-black2-rgb: #{toRGB(#4f5345)};
+	--grdeen-black3: #545454;
+	--grdeen-black3-rgb: #{toRGB(#545454)};
+
+	// not use
+	--grdeen-border-color: #e8e3da;
+	--grdeen-border-color-rgb: #{toRGB(#e8e3da)};
+	--grdeen-letter-space: 0.1em;
+	--grdeen-letter-space-xl: 0.2em;
+}
+
+
+$grdeen-font:var(--grdeen-font, 'Inter', sans-serif);
+$grdeen-heading-font:var(--grdeen-heading-font, 'DM Sans', sans-serif);
+$grdeen-special-font:var(--grdeen-special-font, 'Alex Brush', cursive);
+$grdeen-text:var(--grdeen-text, #626f62);
+$grdeen-text-rgb:var(--grdeen-text-rgb, #{toRGB(#626f62)});
+$grdeen-text-dark:var(--grdeen-text-dark, #07370a);
+$grdeen-text-dark-rgb:var(--grdeen-text-dark-rgb, #{toRGB(#07370a)});
+$grdeen-text-dark2:var(--grdeen-text-dark2, #0e150e);
+$grdeen-text-dark2-rgb:var(--grdeen-text-dark2-rgb, #{toRGB(#0e150e)});
+$grdeen-text-gray:var(--grdeen-text-gray, #89868d);
+$grdeen-text-gray-rgb:var(--grdeen-text-gray-rgb, #{toRGB(#89868d)});
+
+$grdeen-base:var(--grdeen-base, #1a9120);
+$grdeen-base-rgb:var(--grdeen-base-rgb, #{toRGB(#1a9120)});
+$grdeen-green:var(--grdeen-green, #1f9a26);
+$grdeen-green-rgb:var(--grdeen-green-rgb, #{toRGB(#1f9a26)});
+$grdeen-gray:var(--grdeen-gray, #f6f7f2);
+$grdeen-gray-rgb:var(--grdeen-gray-rgb, #{toRGB(#f6f7f2)});
+$grdeen-gray2:var(--grdeen-gray2, #f1f4f1);
+$grdeen-gray2-rgb:var(--grdeen-gray2-rgb, #{toRGB(#f1f4f1)});
+$grdeen-white:var(--grdeen-white, #fff);
+$grdeen-white-rgb:var(--grdeen-white-rgb, #{toRGB(#fff)});
+$grdeen-white2:var(--grdeen-white2, #f2f4ec);
+$grdeen-white2-rgb:var(--grdeen-white2-rgb, #{toRGB(#f2f4ec)});
+$grdeen-white3:var(--grdeen-white3, #faf8ec);
+$grdeen-white3-rgb:var(--grdeen-white3-rgb, #{toRGB(#faf8ec)});
+$grdeen-white4:var(--grdeen-white4, #ecf2df);
+$grdeen-white4-rgb:var(--grdeen-white4-rgb, #{toRGB(#ecf2df)});
+$grdeen-black:var(--grdeen-black, #172000);
+$grdeen-black-rgb:var(--grdeen-black-rgb, #{toRGB(#172000)});
+$grdeen-black2:var(--grdeen-black2, #4f5345);
+$grdeen-black2-rgb:var(--grdeen-black2-rgb, #{toRGB(#4f5345)});
+$grdeen-black3:var(--grdeen-black3, #545454);
+$grdeen-black3-rgb:var(--grdeen-black3-rgb, #{toRGB(#545454)});
+
+$grdeen-border-color:var(--grdeen-border-color, #e8e3da);
+$grdeen-border-color-rgb:var(--grdeen-border-color-rgb, #{toRGB(#e8e3da)});
+$grdeen-letter-space:var(--grdeen-letter-space, 0.1em);
+$grdeen-letter-space-xl:var(--grdeen-letter-space-xl, 0.2em);

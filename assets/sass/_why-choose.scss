@@ -1,0 +1,493 @@
+.why-choose-one {
+	position: relative;
+
+	&__shape-1 {
+		display: none;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+		animation: shapeMove 4s linear 0s infinite;
+
+		@include devices(lg) {
+			display: block;
+		}
+	}
+
+	@keyframes shapeMove {
+
+		0%,
+		100% {
+			transform: translateX(0px);
+		}
+
+		50% {
+			transform: translateX(10px);
+		}
+	}
+
+	&__inner {
+		background-color: $grdeen-gray;
+		padding-top: 120px;
+		padding-bottom: 120px;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 10000px;
+			height: 100%;
+			background-color: $grdeen-gray;
+			position: absolute;
+			top: 0;
+			right: 100%;
+		}
+	}
+
+	.container {
+		position: relative;
+	}
+
+	&__content {
+		padding-left: 30px;
+		padding-right: 30px;
+
+		@include devices(xl) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	&__image {
+		text-align: right;
+		margin-top: 35px;
+
+		@include devices(xl) {
+			margin-top: 0;
+		}
+
+		img {
+			max-width: 100%;
+
+			@include devices(xl) {
+				max-width: none;
+			}
+		}
+	}
+
+	&__highlighted {
+		margin: 0;
+		color: $grdeen-base;
+		font-size: 18px;
+		line-height: 30px;
+		margin-top: -20px;
+
+		@include devices(md) {
+			font-size: 20px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 15px;
+		line-height: 2em;
+		margin-top: 15px;
+
+		@include devices(xl) {
+			margin-top: 20px;
+		}
+	}
+
+	&__list {
+		margin-top: 45px;
+
+		&__item {
+			align-items: flex-start;
+			display: flex;
+			flex-direction: column;
+
+			@include devices(xl) {
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+
+		&__item+&__item {
+			margin-top: 20px;
+		}
+
+		&__icon {
+			width: 57px;
+			height: 57px;
+			background-color: $grdeen-base;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: $grdeen-white;
+			font-size: 21px;
+			flex-shrink: 0;
+			border-radius: 50%;
+			margin-bottom: 15px;
+			transition: all 500ms ease;
+
+			i {
+				transform: scale(1);
+				transition: 500ms ease;
+			}
+
+			&:hover {
+				background-color: $grdeen-black;
+				color: $grdeen-white;
+
+				i {
+					transform: scale(.9);
+				}
+			}
+
+			@include devices(xl) {
+				margin-bottom: 0;
+				margin-right: 20px;
+			}
+		}
+
+		&__title {
+			margin: 0;
+			text-transform: uppercase;
+			font-size: 20px;
+			color: $grdeen-black;
+			font-weight: bold;
+
+			@include devices(xl) {
+				min-width: 130px;
+			}
+
+			a {
+				color: inherit;
+				@include borderHover;
+			}
+		}
+
+		&__text {
+			margin: 0;
+			font-size: 15px;
+			line-height: 26px;
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 1px;
+				height: 57px;
+				background-color: $grdeen-border-color;
+				top: 50%;
+				transform: translateY(-50%);
+				display: none;
+
+				@include devices(xl) {
+					display: block;
+				}
+			}
+
+			@include devices(xl) {
+
+				padding-left: 30px;
+			}
+		}
+	}
+}
+
+.why-choose-two {
+	padding-top: 100px;
+
+	&__image {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 110px;
+
+		@include devices(lg) {
+			margin-bottom: 0;
+		}
+
+		@include devices(xl) {
+			margin-left: 120px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+
+		&__two {
+			position: absolute;
+			bottom: -50px;
+			left: 0px;
+			z-index: 10;
+
+			@include devices(lg) {
+				bottom: 0;
+				left: -120px;
+			}
+		}
+
+		&__shape {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 11;
+			animation: shapeMove 4s linear 0s infinite;
+
+			@include devices(lg) {
+				bottom: auto;
+				top: 200px;
+				right: auto;
+				left: -100px;
+			}
+		}
+
+		&__icon {
+			width: 96px;
+			height: 96px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $grdeen-base;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			z-index: 10;
+
+			@include devices(lg) {
+				left: -48px;
+			}
+		}
+	}
+
+	&__content {
+
+		@include devices(xl) {
+			padding-left: 70px;
+		}
+	}
+
+	&__highlight {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 500;
+		color: $grdeen-base;
+		margin: 0;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+		@include devices(lg) {
+			margin: 0;
+			font-size: 20px;
+			line-height: 34px;
+			margin-top: -20px;
+			margin-bottom: 32px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 15px;
+		line-height: 1.875em;
+
+		@include devices(lg) {
+			font-size: 16px;
+		}
+	}
+
+	&__progress {
+		margin-top: 30px;
+		margin-bottom: 37px;
+
+		&__title {
+			text-transform: uppercase;
+			margin: 0;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		&__bar {
+			width: 100%;
+			height: 17px;
+			border: 1px solid $grdeen-border-color;
+			box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+			position: relative;
+
+		}
+
+		&__inner {
+			position: absolute;
+			height: calc(100% - 6px);
+			left: 4px;
+			top: 3px;
+			background-color: $grdeen-base;
+			transition: all 700ms linear;
+			width: 0px;
+		}
+
+		&__number {
+			position: absolute;
+			bottom: calc(100% + 5px);
+			right: 0;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	&__link {
+		&:hover {
+			color: $grdeen-white;
+		}
+
+		&::after {
+			background-color: $grdeen-black;
+		}
+
+		&::before {
+			background-color: $grdeen-base;
+		}
+	}
+}
+
+.why-choose-three {
+	position: relative;
+	padding: 120px 0 220px;
+	background-color: $grdeen-black;
+	margin-bottom: -100px;
+
+	@media (max-width: 767px) {
+		padding: 80px 0 180px;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $grdeen-black;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		opacity: .3;
+	}
+
+	&__content {
+		position: relative;
+
+		&__text {
+			font-size: 15px;
+			line-height: 30px;
+			color: rgba($grdeen-white-rgb, .6);
+			margin: 0;
+		}
+	}
+
+	.sec-title__title {
+		color: $grdeen-white;
+	}
+
+	.sec-title {
+		padding-bottom: 26px;
+	}
+
+	&__list {
+		position: relative;
+		background-color: $grdeen-black2;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 0;
+
+		@media (max-width: 991px) {
+			margin: 50px 0 0;
+		}
+	}
+
+	&__item {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding: 40px 40px 36px;
+
+		&:nth-child(1),
+		&:nth-child(3) {
+			border-right: 1px solid rgba($grdeen-white-rgb, .1);
+		}
+
+		&:nth-child(1),
+		&:nth-child(2) {
+			border-bottom: 1px solid rgba($grdeen-white-rgb, .1);
+		}
+
+		@media (min-width: 992px) and (max-width: 1199px) {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+
+		@media (max-width: 767px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			border-bottom: 1px solid rgba($grdeen-white-rgb, .1);
+		}
+
+		&:hover .why-choose-three__item__icon span {
+			transform: scale(0.8);
+		}
+
+		&__top {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 12px;
+		}
+
+		&__icon {
+			width: 57px;
+			height: 57px;
+			background-color: $grdeen-base;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			color: $grdeen-white;
+			font-size: 21px;
+			margin-right: 18px;
+
+			@media (min-width: 992px) and (max-width: 1199px) {
+				margin-right: 12px;
+			}
+
+			span {
+				display: inline-block;
+				transition: all 500ms linear;
+				transition-delay: 0s;
+				transition-delay: 0s;
+				transition-delay: 0.1s;
+				transform: scale(1);
+			}
+		}
+
+		&__title {
+			color: $grdeen-white;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin: 0;
+		}
+
+		&__text {
+			color: $grdeen-text-dark;
+			font-size: 15px;
+			line-height: 30px;
+			margin: 0;
+		}
+	}
+}

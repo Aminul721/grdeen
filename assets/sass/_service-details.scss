@@ -1,0 +1,289 @@
+.service-details {
+	padding: 120px 0;
+	padding-top: 100px;
+
+	@media (max-width: 767px) {
+		padding: 80px 0;
+		padding-top: 60px;
+	}
+
+	&__thumbnail {
+		margin-bottom: 20px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	&__image__circle {
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		text-transform: uppercase;
+		color: $grdeen-black;
+		font-size: 25px;
+		font-weight: bold;
+		margin-bottom: 10px;
+
+		@include devices(md) {
+			font-size: 30px;
+		}
+
+		@include devices(lg) {
+			font-size: 36px;
+		}
+	}
+
+	&__sub-title {
+		margin: 0;
+		text-transform: uppercase;
+		color: $grdeen-black;
+		font-weight: bold;
+		font-size: 22px;
+		margin-bottom: 20px;
+
+		@include devices(md) {
+			font-size: 26px;
+		}
+
+		@include devices(lg) {
+			font-size: 30px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 15px;
+		line-height: 2em;
+	}
+
+	&__text+&__title {
+		margin-top: 40px;
+	}
+
+	&__text+&__list {
+		margin-top: 40px;
+	}
+
+	&__text+&__text {
+		margin-top: 35px;
+	}
+
+	&__list {
+		margin-bottom: 0;
+		margin-bottom: 40px;
+
+		li {
+			position: relative;
+			font-size: 16px;
+			line-height: 1.5em;
+			padding-left: 27px;
+			color: $grdeen-black;
+			text-shadow: 0 0 .5px currentColor;
+
+			@include devices(md) {
+				line-height: 2.125em;
+			}
+
+			+li {
+				margin-top: 10px;
+
+				@include devices(md) {
+					margin-top: 0;
+				}
+			}
+
+			>i {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				font-size: 14px;
+				color: $grdeen-base;
+			}
+		}
+	}
+
+	&__process {
+		@include devices(md) {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+			margin-top: 20px;
+		}
+
+		li+li {
+			margin-top: 20px;
+
+			@include devices(md) {
+				margin-top: 0;
+			}
+		}
+
+		&__top {
+
+			@include devices(md) {
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		&__icon {
+			width: 57px;
+			height: 57px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $grdeen-base;
+			color: $grdeen-white;
+			font-size: 21px;
+			border-radius: 50%;
+			margin-right: 20px;
+			transition: all 500ms ease;
+			margin-bottom: 20px;
+
+			&::before {
+				transform: scale(1);
+				transition: transform 500ms ease;
+			}
+
+			@include devices(md) {
+				margin-bottom: 0;
+			}
+
+			&:hover {
+				background-color: $grdeen-black;
+				color: $grdeen-white;
+
+				&::before {
+					transform: scale(.9);
+				}
+			}
+		}
+
+		&__title {
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin: 0;
+			color: $grdeen-black;
+
+			@include devices(md) {
+				font-size: 20px;
+			}
+		}
+
+		&__text {
+			margin: 0;
+			font-size: 15px;
+			line-height: 2em;
+			max-width: 220px;
+			margin-top: 10px;
+		}
+	}
+
+	&__post {
+		margin-bottom: 0;
+
+		li+li {
+			margin-top: 10px;
+		}
+
+		&__date {
+			text-transform: uppercase;
+			letter-spacing: $grdeen-letter-space-xl;
+			color: $grdeen-base;
+			font-size: 14px;
+			margin: 0;
+			line-height: 2.142857142857143em;
+		}
+
+		&__title {
+			margin: 0;
+			line-height: 1.875em;
+			color: $grdeen-black;
+			text-shadow: 0 0 .5px currentColor;
+
+			a {
+				color: inherit;
+				@include borderHover;
+
+				&:hover {
+					color: $grdeen-black;
+				}
+			}
+		}
+	}
+
+	&__info {
+		border-top: 1px solid $grdeen-border-color;
+		padding-top: 55px;
+		margin-top: 60px;
+
+		&__title {
+			font-weight: bold;
+			text-transform: uppercase;
+			margin: 0;
+			color: $grdeen-black;
+			font-size: 20px;
+			margin-bottom: 24px;
+
+		}
+
+		&__list {
+			margin-bottom: 0;
+
+			li {
+				@include devices(md) {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+			}
+
+			li+li {
+				border-top: 1px solid $grdeen-border-color;
+				margin-top: 20px;
+				padding-top: 20px;
+			}
+
+
+			&__date {
+				color: $grdeen-black;
+				font-size: 16px;
+				line-height: 24px;
+				text-transform: uppercase;
+				display: flex;
+				align-items: center;
+
+				>i {
+					color: $grdeen-base;
+					font-size: 22px;
+					margin-right: 10px;
+				}
+			}
+
+			&__space {
+				font-size: 16px;
+				line-height: 24px;
+				color: $grdeen-text;
+				margin-top: 10px;
+				margin-bottom: 10px;
+
+				@include devices(md) {
+					margin-bottom: 0;
+					margin-top: 0;
+				}
+			}
+
+			&__btn {
+				font-size: 10px;
+				padding: 10.75px 30px;
+			}
+		}
+	}
+}
